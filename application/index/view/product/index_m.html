@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name = "format-detection" content="telephone = no" />
+<META http-equiv="x-ua-compatible" content="ie=7">
+<title>关于赛特微</title>
+<link rel="stylesheet" href="__PUBLIC__/Wap/Common/style/swiper.min.css" >
+<link rel="stylesheet" media="all" type="text/css" href="__PUBLIC__/Wap/Common/style/reset.css"  />
+<link rel="stylesheet" media="all" type="text/css" href="__PUBLIC__/Wap/Common/style/style.css"  />
+<link rel="stylesheet" href="__PUBLIC__/Wap/Common/style/flexslider.css" >
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/jquery.fancybox.css-v=2.1.2.css"  media="screen" />
+<script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery2.js" ></script>
+<script src="__PUBLIC__/Wap/Common/js/layout.js" ></script>
+<script src="__PUBLIC__/Wap/Common/js/load.js" ></script>
+<script src="__PUBLIC__/Wap/Common/js/swiper.min.js" ></script>
+<script src="__PUBLIC__/Wap/Common/js/jquery.flexslider-min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery.fancybox.js-v=2.1.3.js" ></script>
+  <script>
+$(function(){
+	 $('.showzz').fancybox();
+	
+});
+</script>
+ 
+</head>
+<body>
+
+{include file="common/header_m"}
+
+<DIV class="wapper" id="block_mid">
+	<Div id="header">
+		<Div class="wapper">
+			<span></span>
+			<a href="javascript:;" lang="1" class="showmenu"></a>
+		</Div>
+	</Div>
+	<div class="comdiv">
+		 <img src="__PUBLIC__/phy-img/product-banner.jpg"  style="width:100%;" />
+	</div>
+	<div class="comdiv" style="padding:55px 0px;">
+		<img src="__PUBLIC__/Myapp/Common/images/p1.png"  />
+	</div>
+	
+	<div class="comdiv" style="padding-top:58px;">
+		 
+		 <div class="col-xs-12 col-sm-12 " style="border:1px solid #ccc;margin-bottom: 20px;">
+			<div class="col-md-12 text-center"><img src="__PUBLIC__/phy-img/pack1.jpg" class="img-responsive" alt=""></div>
+			<div style="width: 100%;padding:15px 15px;font-size: 18px;">
+				产品类型：<select name="" id="product_type" onchange="window.location=this.value" style="width: 260px;margin-right: 20px;">
+					<option value="{:url('index/Product/index_m')}" >所有</option>
+					<option {if condition="$classify eq 'MIN整流桥-桥堆'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'MIN整流桥-桥堆'])}" >
+						MIN整流桥-桥堆
+					</option>
+					<option {if condition="$classify eq 'TVS二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'TVS二极管插片'])}" >
+						TVS二极管插片
+					</option>
+					<option {if condition="$classify eq 'TVS二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'TVS二极管贴片'])}" >
+						TVS二极管贴片
+					</option>
+					<option {if condition="$classify eq '玻璃钝化快恢复整流管插件'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'玻璃钝化快恢复整流管插件'])}" >
+						玻璃钝化快恢复整流管插件
+					</option>
+					<option {if condition="$classify eq '玻璃钝化普通整流管插件'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'玻璃钝化普通整流管插件'])}" >
+						玻璃钝化普通整流管插件
+					</option>
+					<option {if condition="$classify eq '超快恢复二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'超快恢复二极管插片'])}" >
+						超快恢复二极管插片
+					</option>
+					<option {if condition="$classify eq '超快恢复二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'超快恢复二极管贴片'])}" >
+						超快恢复二极管贴片
+					</option>
+					<option {if condition="$classify eq '高结温MIN整流桥-桥堆'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'高结温MIN整流桥-桥堆'])}" >
+						高结温MIN整流桥-桥堆
+					</option>
+					<option {if condition="$classify eq '快恢复二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'快恢复二极管插片'])}" >
+						快恢复二极管插片
+					</option>
+					<option {if condition="$classify eq '快恢复二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'快恢复二极管贴片'])}" >
+						快恢复二极管贴片
+					</option>
+					<option {if condition="$classify eq '稳压二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'稳压二极管插片'])}" >
+						稳压二极管插片
+					</option>
+					<option {if condition="$classify eq '稳压二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'稳压二极管贴片'])}" >
+						稳压二极管贴片
+					</option>
+					<option {if condition="$classify eq '肖特基二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'肖特基二极管插片'])}" >
+						肖特基二极管插片
+					</option>
+					<option {if condition="$classify eq '肖特基二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'肖特基二极管贴片'])}">
+						肖特基二极管贴片
+					</option>
+					<option {if condition="$classify eq '整流二极管插片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'整流二极管插片'])}" >
+						整流二极管插片
+					</option>
+					<option {if condition="$classify eq '整流二极管贴片'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'整流二极管贴片'])}">
+						整流二极管贴片
+					</option>
+					<option {if condition="$classify eq '半导体放电管'"}selected="selected"{/if} value="{:url('index/Product/index_m',['classify'=>'半导体放电管'])}" >
+						半导体放电管
+					</option>
+				</select>
+				
+			</div>
+			<table width="100%" border="0" cellpadding="3" cellspacing="0" style="margin-bottom:10px">
+				<tbody>
+					<tr>
+						<td width="11%" rowspan="3" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">Type</td>
+						<td width="5%" rowspan="3" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">PDF</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">V<sub>RRM</sub></td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">I<sub>(AV)</sub></td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">I<sub>FSM</sub></td>
+						<td colspan="2" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">V<sub>F@IF</sub></td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">I<sub>R</sub></td>
+						<td width="11%" rowspan="2" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">Package &amp; Size</td>
+					</tr>
+					<tr>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">V</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">A</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">A</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">V</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">A</td>
+						<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid">μA</td>
+					</tr>
+					<tr>
+							<form id="form1" method="POST">
+							<input type="hidden" id="classify" name="classify" value="{$classify}">
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="vrrm" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_vrrm" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="iava" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_iava" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="ifsma" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_ifsma" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="vfv" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_vfv" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="ifa" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_ifa" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="ira" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_ira" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						<td bgcolor="#EDEDED" style="border:1px #cccccc solid">
+							<select name="size" class="sub"  >
+								<option value="">全部</option>
+								{foreach name="fie_size" item="v"}
+								<option value="{$v}">{$v}</option>
+								{/foreach}
+							</select>
+						</td>
+						</form>
+					</tr>
+				</tbody>
+			</table>
+			<table id="data_table" width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:10px 0px;">
+					<tbody>
+						{volist name='list' id='data'}
+						<tr>
+							<td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px; ">{$data.name}</td>
+							<td width="5%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">
+								{if condition="$data.cover"}
+									<a href="/public/{$data.cover}"><img src="__STATIC__/pdf.gif" alt=""></a>
+								{else}
+									<span aria-hidden="true">无</span>
+								{/if}
+							</td>
+							<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.vrrm}</td>
+							<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.iava}</td>
+							<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ifsma}</td>
+							<td  width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.vfv}</td>
+							<td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ifa}</td>
+							<td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ira}</td>
+							<td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.size}</td>
+						</tr>
+						{/volist}
+					</tbody>
+					
+			</table>
+			<div class='dataTables_paginate paging_simple_numbers' id="fenye" style="width:100%;margin:0 auto;margin-bottom: 10px;">{$list->render()}</div> 
+							
+		</div>
+		
+	</div>
+	 
+	 
+	<div class="comdiv" id="footer" style="margin-top: 20px;">
+<p><img src="__PUBLIC__/phy-img/code_max.jpg" alt="" style="width: 100px;" /></p>
+<p style="font-size: 19px;">Copyright ©深圳市赛特微电子有限公司</p>
+  			<p><span style="width: 32px;height:32px;"><img src="__PUBLIC__/phy-img/email_pic.png" style="vertical-align:middle;" alt=""></span>
+  			<span style="width: 200px;padding-bottom: 5px;">2355647681@qq.com</span> &nbsp;&nbsp;&nbsp;<span style="width: 32px;"><img style="vertical-align:middle;" src="__PUBLIC__/phy-img/phone_pic.png" alt="" /></span>
+  			<span style="width: 200px;">0755-83661636</span></p>
+  			<p></p>
+  			<p><span style="width: 32px;"><img style="vertical-align:middle;" src="__PUBLIC__/phy-img/shouji_pic.png" alt="" /></span>
+  			<span style="width: 200px;">0755-83668012</span>&nbsp;&nbsp;&nbsp;技术支持：<a href="http://wwww.pstldz.com" target="_blank">Personal tailor</a> &nbsp;&nbsp;<a href="http://wwww.wunuoyoupin.com">吾诺优品</a></p>
+
+		<p></p>
+	</div>
+</DIV>
+  <script>
+var page = 1;
+$(function(){
+	//getlist($('.loadmore').attr('id'),$('.loadmore').attr('data-href'),$('.loadmore').attr('lang'));
+	$('.loadmore').click(function(){
+		getlist($(this).attr('id'),$(this).attr('lang'));
+		
+	});
+	 
+	 
+});
+function getlist(href,cid){
+		 
+		$.get(href,{page:page,cid:cid,t:new Date().getTime()},function(d,t,j){
+			page++;
+			
+			if(d==""){
+				alert("资料正在整理中！");
+				return false;
+				}else{
+				$(".newslist2").append(d);
+				 
+					$('.newslist2 li').each(function(){
+						 var n=$('.newslist2 li').index(this);
+						 if(n%3==0){
+						 //	$(this).css('margin-left','0');
+						 }
+					});
+				}
+			 
+		},"text");
+		
+		 
+		
+		return false;
+}
+var product_type=$("#product_type").val();
+  $("#product_lb").click(function(){
+  	if(product_type==''){
+  		$('#product_lb').attr("disabled",true);  
+  		alert('请选择产品类型');
+  		
+
+  	}else{
+  
+		$('#product_lb').attr("disabled",false); 
+  	}
+  })
+</script> 
+
+
+
+<script>
+	$(".cur").attr('href',"javascript:void");
+function AjaxPage(page){
+    
+  $.get('/index/successcase/getAll',{ page:page},function (data) {
+    $('.little-content').html(data);
+  })
+}
+$('.on').hover(function(){
+  $.get('/index/successcase/all',function (data) {
+    $('.little-content').html(data);
+  })
+});
+$('.title-id').hover(function(){
+  var id = $(this).attr('title');
+  $.post('{:url("index/Product/index_m")}',{ 'id':id },function(data){
+    $('.little-content').html(data);
+  });
+});
+function AjaxDetailsPage(page){
+    var vrrm = $('#vrrm').val();
+    var vfv = $('#vfv').val();
+    var size = $('#size').val();
+    var ira = $('#ira').val();
+    var ifsma = $('#ifsma').val();
+    var ifa = $('#ifa').val();
+    var iava = $('#iava').val();
+    var classify = $('#classify').val();
+    
+  $.post('{:url("index/Product/index_m")}',{ page:page,vrrm:vrrm,vfv:vfv,size:size,ira:ira,ifsma:ifsma,ifa:ifa,iava:iava,classify:classify },function (data) {
+    //console.log($(data).find("#data_table").html());
+    $("#fenye").empty();
+    $("#fenye").append($(data).find("#fenye").html());
+    $('#data_table').html($(data).find("#data_table").html());
+    $(".cur").attr('href',"javascript:void");
+  })
+}
+</script>
+
+
+<script>
+		$(".sub").change(function(){
+		   var url = "{:url('index/Product/index_m')}";
+		   console.log($("form").serialize());
+		   $.ajax({  
+			   type : "POST",  
+			   async : false,  //同步请求  
+			   url : url,  
+			   data : $("form").serialize(),
+			   timeout:1000,  
+			   success:function(dates){  
+				   //console.log(dates);
+				   $("#data_table").empty();
+				   $("#fenye").empty();
+				   //console.log($(dates).find("#data_table").html());
+				   $("#data_table").append($(dates).find("#data_table").html());
+				   $("#fenye").append($(dates).find("#fenye").html());
+			 
+			   },  
+			   error: function() {  
+				   alert("失败，请稍后再试！");  
+			   }  
+		   });  
+		});
+   </script>
+</body>
+</html>

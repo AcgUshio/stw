@@ -1,0 +1,584 @@
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}b,strong{font-weight:bold}table{border-collapse:collapse;border-spacing:0}input,textarea,button{font-size:10pt;}.L{float:left}.R{float:right}.C{clear:both}.RA{position:relative;}.A{position:absolute;}.BR{display:block;overflow:hidden;line-height:1px;height:1px;}.BO{display: block;overflow: hidden;}.B{display: block;}.O{overflow: hidden;}.IB{display: inline-block;*display: inline;*zoom:1;}.AC{position: absolute;left: 50%;top: 50%;}.ABC{display: block;overflow: hidden;position: absolute;left: 50%;top: 50%;}
+html,body{font-family: "Microsoft Yahei",simhei; color:#333; font-size:14px;}
+a{text-decoration: none;outline: 0; color:#333;}
+a:hover,.newsreturn a:hover,.protop a:hover{text-decoration: none;outline: 0; }
+.Root{width:1200px;margin:0 auto;}
+.big_wapper{
+width:100%; clear:both; margin:0px; padding:0px; overflow:hidden;}
+/*首页*/
+#banner{
+width:100%; clear:both; position:relative;}
+.slider6 .slide{
+width:100%; margin:0px; padding:0px; background-position:center; text-align:center; background-repeat:no-repeat; height:670px;}
+.slider6 .slide a{
+display:inline-block;   background-position:center; background-repeat:no-repeat; width:100%; height:670px;}
+#banner .bx-wrapper .bx-pager.bx-default-pager a{
+width:16px; height:16px; background:none;margin:0 10px; background-color:transparent; background-image:url(../images/li.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/li.png*/; background-position:center; background-repeat:no-repeat;}
+#banner .bx-wrapper .bx-pager.bx-default-pager a:hover, #banner .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-image:url(../images/lion.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/lion.png*/;}
+#banner .bx-wrapper .bx-pager,#banner .bx-wrapper .bx-controls-auto{
+bottom:70px;}
+.banner_prev{
+position:absolute; left:65px; top:346px; width:58px; height:58px; z-index:10; background-image:url(../images/left.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/left.png*/; background-position:center; background-repeat:no-repeat;}
+.banner_prev:hover{
+}
+.banner_prev a{
+float:left; width:100%; height:58px; text-indent:-999em;}
+.banner_next{
+position:absolute; right:65px; top:346px; width:58px; height:58px; z-index:10; background-image:url(../images/right.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/right.png*/; background-position:center; background-repeat:no-repeat;}
+.banner_next a{
+float:left; width:100%; height:58px; text-indent:-999em;}
+
+#header{
+  left:0; top:0; height:80px; width:100%; clear:both; z-index:999;   margin:0px; padding:0px 0px;    box-shadow: 0 0 15px rgba(0,0,0,0.7);} 
+#logo{
+float:left; margin-left:0px; margin-top:13px;}
+#logo img{
+float:left;}
+#menu{
+float:right; text-align:right; margin-top:25px; margin-right:0px;}
+#menu>ul>li{
+display:inline; margin-left:15px;}
+#menu>ul>li>a{-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;
+display:inline-block; height:30px; text-align:center; line-height:30px; color:#2a2525; font-size:15px; padding:0 20px;}
+#menu>ul>li>a:hover,#menu>ul>li>a.on{
+background-color:#0b76cb; color:#fff;-moz-border-radius: 15px; /* Gecko browsers */ -webkit-border-radius: 15px; /* Webkit browsers */ border-radius:15px; /* W3C syntax */}
+#menu>ul>li.lli>a{
+padding-right:0px; color:#04a3ce; background-image:url(../images/ll.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/images/ll.jpg*/; background-position:left center; background-repeat:no-repeat;}
+#menu>ul>li.lli a:hover{
+background-color:transparent;}
+#wjSubNav {
+    position: fixed; bottom:40%;right:15px;width: 50px;height: 100px;background-color: #333333;z-index: 999;
+}
+#wjSubNav .fix_div {
+   height:50px;border-bottom:1px solid white;
+    cursor: pointer;
+}
+#wjSubNav .fix_div:hover {
+     background: #337ab7;
+}
+#wjSubNav .fix_div:hover .font {
+    width: 182px;
+    left: -181px;
+}
+#wjSubNav .fix_div .font {
+    width: 0px;
+    height: 49px;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    background: #337ab7;
+    color: #fff;
+    line-height: 50px;
+    text-indent: 25px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.bg{
+/* background-position:center; background-repeat:no-repeat; */ margin:0px; padding:0px; overflow:hidden;}
+.ctitle{
+width:100%; overflow:hidden; padding-top:60px; padding-bottom:50px;}
+.plist ul li{
+float:left; width:295px; height:300px; background-color:#fff; margin-left:6px;}
+.plist ul li .pimg{
+width:100%; height:245px; text-align:center; position:relative;}
+.plist ul li .pimg img{
+height:190px; margin-top:25px;}
+.pname{
+width:100%; text-align:center; line-height:55px; font-size:16px;}
+.plist ul li .pimg div{
+position:absolute; left:0; top:0; width:100%; height:100%; background-image:url(../images/index2.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index2.png*/;-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;filter:alpha(opacity=0);  
+      -moz-opacity:0;  
+      -khtml-opacity: 0;  
+      opacity: 0;}
+.plist ul li .pimg div span{
+display:inline-block; width:37px; height:37px; background-image:url(../images/index3.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index3.png*/; margin-top:103px;}
+.plist ul li:hover div{
+filter:alpha(opacity=100);  
+      -moz-opacity:1;  
+      -khtml-opacity: 1;  
+      opacity: 1;}
+.plist ul li.fli{
+margin-left:0px;}
+.indexabout{
+width:100%; height:587px; position:relative;}
+.indexabout_left{
+position:absolute; left:0; top:0; height:100%; width:55%; background-image:url(../images/index7.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/images/index7.jpg*/; background-position:right center; background-repeat:no-repeat; background-size:cover}
+.indexabout_right{position:absolute; right:0; top:0; height:100%; width:45%; background-image:url(../../../phy-img/sp.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index8.jpg*/; background-position:left center; background-repeat:no-repeat; background-size:cover}
+.indexaboutmid{
+position:absolute; left:0; top:0; height:100%; width:100%; z-index:10;}
+.aleft{
+float:left; width:581px; color:#fff; padding-top:30px; overflow:hidden;}
+.aleft_mid{
+width:100%; margin:0px; overflow:hidden; line-height:28px; padding:35px 0px 30px 0px;}
+.indexcase ul li{
+float:left; width:380px; height:275px; position:relative; overflow:hidden; margin-left:30px; margin-bottom:57px;}
+.indexcase ul li.fli{
+margin-left:0px;}
+.indexcase ul li img{
+float:left; width:100%; height:275px;}
+
+.indexcase ul li div{
+position:absolute; left:0; top:0; width:100%; height:100%; background-image:url(../images/index2.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index2.png*/;-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;filter:alpha(opacity=0);  
+      -moz-opacity:0;  
+      -khtml-opacity: 0;  
+      opacity: 0; text-align:center;}
+.indexcase ul li div span{
+display:inline-block; width:37px; height:37px; background-image:url(../images/index3.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index3.png*/; margin-top:119px;}
+.indexcase ul li:hover div{filter:alpha(opacity=100);  
+      -moz-opacity:1;  
+      -khtml-opacity: 1;  
+      opacity: 1;}
+.casename{-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;filter:alpha(opacity=0);  
+      -moz-opacity:0;  
+      -khtml-opacity: 0;  
+      opacity: 0;
+position:absolute; left:0; bottom:23px; width:100%; text-align:center; color:#e1ecf4; line-height:30px; z-index:10; font-size:18px; }	  
+.indexcase ul li:hover .casename{filter:alpha(opacity=100);  
+      -moz-opacity:1;  
+      -khtml-opacity: 1;  
+      opacity: 1;}
+.indexewsmore{
+width:100%; text-align:center;}
+.indexewsmore a{
+display:inline-block; width:235px; height:50px; text-align:center; line-height:50px; color:#fff; font-size:18px; font-family:Arial, Helvetica, sans-serif; background-color:#2167bc;}
+.indexewsmore a:hover{
+background-color:#666;}
+.news_left{
+width:585px; float:left;}
+.news_left_img{
+width:585px; height:400px; float:left; position:relative; overflow:hidden;}
+.news_left_img img{
+float:left; width:100%; height:400px;}
+.news_left_img div{
+position:absolute; left:0; bottom:0; width:94%; line-height:60px; height:60px; padding:0 3%; line-height:60px; background-image:url(../images/png.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/png.png*/; color:#fff;}
+.news_right{
+width:590px; float:right; margin:0px; padding:0px; padding-top:149px;}
+.news_right ul li{
+float:left; width:100%; background-color:#fff; height:112px; position:relative; background-image:url(../images/index15.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index15.png*/; background-position:right top; background-repeat:no-repeat; position:relative;-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; margin-bottom:33px;}
+.news_right_mid{
+width:485px; float:left; margin-left:20px;}
+.news_right_mid_top{
+width:100%; text-align:left; font-size:18px; padding-top:15px; padding-bottom:15px;}
+.news_right_mid_jj{
+color:#646464; width:100%; margin:0px; padding:0px; overflow:hidden; line-height:22px;} 
+.news_right ul li .nt{
+position:absolute; right:0; top:0; color:#fff; width:63px; text-align:center; padding-right:15px;}
+.nt_1{
+width:100%; margin:0px; padding:0px; font-size:14px; padding-top:10px; padding-bottom:10px; text-align:right; font-family:Arial, Helvetica, sans-serif;}
+.nt_2{
+width:100%; font-weight:bold; font-size:24px; font-family:Arial, Helvetica, sans-serif; text-align:right;}
+.news_right ul li:hover{
+background-image:url(../images/index14.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index14.png*/;}
+.news_right ul li:hover a{
+color:#347bd3}
+.indexmap{
+height:578px; position:relative;}
+.indexmap_left{
+position:absolute; left:10%; top:215px; width:183px; text-align:right;
+z-index:100}
+.indexmap_left img{
+ }
+.indexmap_right{
+position:absolute; right:10%; top:215px; width:183px; text-align:left; 
+z-index:100}
+.indexmap_mid{
+position:absolute; left:50%; top:50%; margin-left:-185px; margin-top:-210px; width:370px; height:420px; z-index:100; background-image:url(../images/index12.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/index12.png*/; color:#fff; background-position:center; background-repeat:no-repeat;}
+.indexontact table{
+width:100%; text-align:left; vertical-align:middle;}
+.indexontact table td{
+vertical-align:middle; line-height:25px;}
+.indexontact table td img{
+padding-right:10px;}
+
+
+#footer{
+background-color:#141920; color:#fff; line-height:35px; padding-top:15px; padding-bottom:10px;}
+.fleft{
+float:left; width:1000px;}
+#footer a{
+color:#fff}
+.fleft span{
+color:#00a0e9; padding:0 10px;}
+.nybanner{
+width:100%; height:auto; clear:both; background-position:center; background-repeat:no-repeat;}
+.pcate{
+width:100%; margin:0px; padding:0px; clear:both; text-align:center; padding-bottom:60px;}
+.pcate ul{
+margin:0 auto; padding:0px; border:1px #a0a0a0 solid; display:inline-block;}
+.pcate ul li{
+display:inline-block; border-left:1px #a0a0a0 solid; float:left;}
+.pcate ul li a{
+display:inline-block; font-size:18px; line-height:60px; height:60px; padding:0 30px;}
+.pcate ul li.fli{
+border:none;}
+.pcate ul li a:hover,.pcate ul li a.on{
+background-color:#0b76cb; color:#fff}
+.plist_ny{
+width:100%; margin:0px; padding:0px;}
+.plist_ny ul li .plist_xwzx_x{-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;
+float:left;  height:450px; background-color:#a0a0a0; color:#fff; font-size:16px;  margin-bottom:30px; width: 100%;}
+.plist_ny ul li.fli{
+margin-left:0px;}
+.plist_ny_img{
+width:100%; height:355px; text-align:center; overflow:hidden; background-color:#eee; -webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;}
+.plist_ny_img img{
+margin-top:35px;}
+.plist_ny_name{
+width:100%; text-align:center; background-image:url(../images/p3.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/images/p3.jpg*/; background-position:center 65px; line-height:65px; height:95px; background-repeat:no-repeat;}
+.plist_ny ul li a{
+color:#fff}
+.plist_ny ul li:hover .plist_ny_name{
+background-color:#0b76cb}
+.plist_ny_img img{ -webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); -moz-transform: scale(1, 1); transform: scale(1, 1);}
+.plist_ny ul li:hover .plist_ny_img img{-webkit-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); -o-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);}
+
+
+.news_left_img img{-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); -moz-transform: scale(1, 1); transform: scale(1, 1);}
+.news_left_img:hover img{-webkit-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); -o-transform: scale(1.1, 1.1); -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1);}
+
+.loadmorebar{
+width:100%; text-align:center; padding-bottom:50px; overflow:hidden; padding-top:20px;}
+.loadmorebar a{
+display:inline-block; border:1px #a0a0a0 solid; height:43px; line-height:43px; color:#646464; padding:0 50px;-moz-border-radius: 20px; /* Gecko browsers */ -webkit-border-radius: 20px; /* Webkit browsers */ border-radius:20px; /* W3C syntax */}
+.loadmorebar a:hover{
+background-color:#0b76cb; color:#fff; border-color:#0b76cb}
+.protop{
+width:100%; text-align:left; margin:0px; padding:35px 0px; overflow:hidden; color:#646464}
+.protop a{
+color:#646464;}
+.protop span{
+color:#333}
+.proimg{
+width:100%; text-align:center; overflow:hidden; padding:30px 0px;}
+.protab{
+width:100%; text-align:center; padding-bottom:55px; overflow:hidden; padding-top:20px; border-bottom:1px #a0a0a0 dashed;}
+.protab a{ font-size:18px; margin:0 8px;
+display:inline-block; width:170px; height:48px; line-height:48px; color:#fff; background-color:#a0a0a0;}
+.protab a.on,.protab a:hover{
+background-color:#0b76cb;}
+.showproinfo{
+line-height:25px; color:#666; padding:20px 0px 80px 0px;}
+.showproinfo div{
+display:none;}
+
+ 
+.plist_ny ul.caseul li .plist_ny_img img{
+margin-top:0px; width:100%; height:355px;}
+.returnbar{
+width:100%; clear:both; margin:0px; padding:30px 0px 0px 0px;}
+.returnbar a{
+float:right; display:block; width:105px; height:38px; text-align:center; line-height:38px; color:#fff; background-color:#0b76cb; font-size:18px;}
+
+.whlist{
+width:100%; clear:both; margin:0px; padding:0px; position:relative;}
+.whbar{
+width:100%; height:275px; position:relative; overflow:hidden;}
+.whbar img{
+width:100%; height:275px;}
+.whbar .maskss{-webkit-transition-duration: 0.5s; -ms-transition-duration: 0.5s; -o-transition-duration: 0.5s; -moz-transition-duration: 0.5s; transition-duration: 0.5s;filter:alpha(opacity=0);  
+      -moz-opacity:0;  
+      -khtml-opacity: 0;  
+      opacity: 0;
+position:absolute; left:0; top:0; width:100%; text-align:center; color:#fff; height:100%; z-index:10; background-image:url(../images/ab3.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/ab3.png*/;}
+.whbar .maskss p{
+margin:0px; padding:0px; width:100%; overflow:hidden}
+.whbar .maskss p.p1{
+font-size:24px; background-image:url(../images/p3.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/images/p3.jpg*/; padding-top:65px; padding-bottom:20px; background-position:center bottom; background-repeat:no-repeat;}
+.whbar .maskss p.p2{
+font-size:18px;  padding-top:40px; background-position:center bottom; background-repeat:no-repeat;}
+.whbar:hover .maskss{filter:alpha(opacity=100);  
+      -moz-opacity:1;  
+      -khtml-opacity: 1;  
+      opacity: 1;}
+.whlist .bx-wrapper .bx-pager, .whlist .bx-wrapper .bx-controls-auto{
+position:static; margin-top:30px;}	  
+
+.whlist .bx-wrapper .bx-pager.bx-default-pager a{
+width:14px; height:14px; background-color:#fff; margin:0 6px;}
+.whlist .bx-wrapper .bx-pager.bx-default-pager a:hover, .whlist .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-color:#0b76cb}
+
+.zslist .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+position:static; margin-top:40px;margin-bottom: 20px;}
+.zslist .bx-wrapper .bx-pager.bx-default-pager a{
+background-color:#707070; width:12px; height:12px;}
+.zslist .bx-wrapper .bx-pager.bx-default-pager a:hover, .zslist .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-color:#f39800}
+.lclist{
+height:260px; background-image:url(../images/ab8.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/ab8.png*/; background-position:center 55px; background-repeat:repeat-x; padding-bottom:50px;}
+.lcmid{
+width:100%; height:260px; background-image:url(../images/ab10.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/ab10.png*/; background-position:center 48px; background-repeat:no-repeat;}
+.lcmid_top{
+width:100%; height:55px; text-align:center; color:#fff; font-weight:bold; font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+.lcmid_footer{
+width:100%; margin-top:27px; height:178px;}
+.lcmid_footer_top{
+width:100%; text-align:center; color:#dfdcdc; height:70px;}
+.lcmid_footer_footer{
+width:100%; height:108px; text-align:center;}
+.lcmid_footer_footer table{
+width:100%; text-align:center;}
+.lcmid_footer_footer table td{
+text-align:center; vertical-align:middle;}
+.lcmid_footer_footer table td img{
+width:88px; display:inline;}
+.lcmid:hover{
+background-image:url(../images/ab11.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/ab11.png*/;}
+.lcmid:hover .lcmid_top{
+color:#f39800; font-size:24px;}
+.lcmid:hover .lcmid_footer_top,.lcmid:hover .lcmid_footer_top2{
+color:#f39800;  }
+.lcmid:hover .lcmid_footer_footer table td img{
+width:108px}
+.lcmid_footer_top2{
+font-size:18px; font-family:Arial, Helvetica, sans-serif; color:#dfdcdc; font-weight:bold}
+
+.lclist .bx-wrapper .bx-pager, .lclist .bx-wrapper .bx-controls-auto{
+position:static; margin-top:20px;}
+.lclist .bx-wrapper .bx-pager.bx-default-pager a{
+background-color:#fff; width:12px; height:12px;}
+.lclist .bx-wrapper .bx-pager.bx-default-pager a:hover, .lclist .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-color:#ad710e;}
+.market_mid{
+width:100%; text-align:center; margin:0px; padding:0px; overflow:hidden; padding-bottom:70px;}
+.marketdown{
+width:100%; margin:0px; padding:0px; overflow:hidden; background-color:#e3f0f9;}
+.downlist{
+width:100%; margin:0px; padding:0px; clear:both; padding-bottom:80px;}
+.downlink{
+width:100%; margin:0px; padding:30px 0px; background-image:url(../images/m4.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/m4.png*/; overflow:hidden; background-position:bottom; background-repeat:repeat-x;}
+.downlink span{
+float:left;}
+.downlink a{
+float:right; color:#f39800;}
+.downlist .bx-wrapper .bx-pager, .downlist .bx-wrapper .bx-controls-auto{
+position:static; margin-top:70px;}
+.downlist .bx-wrapper .bx-pager.bx-default-pager a{
+width:12px; height:12px; background-color:#959595;}
+.downlist .bx-wrapper .bx-pager.bx-default-pager a:hover, .downlist .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-color:#f39800}
+
+#showbox{
+	  width:804px; height:231px; background-position:center; background-repeat:no-repeat;     text-align:center;   z-index:999999999999;   margin:0px; padding:0px;  display:none; background-image:url(../images/closebar.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/closebar.png*/;   }
+ 
+.mp_close{
+	float:right; margin-top:3px;}
+.mask{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#000000;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	z-index:999999998;
+	display:none	 
+}
+.showbox2{
+width:425px; float:right; margin-right:25px; padding-top:10px;}
+.showbox2 .comdiv{
+text-align:left; width:100%; clear:both; margin:0px; padding:0px;}
+.password_input{
+height:28px; line-height:28px; border:1px #ccc solid; float:left; background-color:transparent; width:255px; padding:0 5px; font-family:"微软雅黑"; color:#666;}
+.password_btn{ text-align:center; line-height:30px;
+float:left; width:80px; border:none; height:30px; background-color:#f39800; font-size:14px; color:#fff;}
+.password_btn:hover{
+color:#fff}
+.contactmid{
+width:100%; margin:0px; padding:0px; clear:both;}
+.contact_left{
+float:left; width:561px;}
+.contact_left img{
+float:left;}
+.contact_left table{
+width:390px; float:right; margin:0px; text-align:left; vertical-align:middle;}
+.contact_left table td{ color:#646464; line-height:30px;
+vertical-align:top; text-align:left; padding-bottom:15px;}
+.contact_left table td img{
+padding-right:15px;}
+.contact_right{
+width:620px; float:right; margin:0px; padding:0px;}
+.contact_right ul li{ margin-bottom:20px;
+float:left; border:1px #0b76cb solid;-moz-border-radius: 5px; /* Gecko browsers */ -webkit-border-radius: 5px; /* Webkit browsers */ border-radius:5px; /* W3C syntax */}
+.contact_right ul li input{
+width:289px; height:33px; line-height:33px; border:none; background-color:transparent; padding:0 10px;}
+.contact_right ul li textarea{
+width:610px; height:140px; font-family:"微软雅黑";   border:none; background-color:transparent; padding:10px;    border: 1px #0b76cb solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;}
+.liuyan{
+border:none; width:140px; height:38px; color:#fff; background-color:#f1ac38; cursor:pointer; font-size:16px;font-family:"微软雅黑"; }
+.contact_right ul{
+width:100%; margin:0px; padding:0px; overflow:hidden; padding-bottom:10px;}
+.joblist{
+width:100%; margin:0px; padding:0px; clear:both; overflow:hidden; padding-bottom:80px;}
+.job{
+width:100%; height:30px; line-height:30px; background-image:url(../images/j2.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/j2.png*/; background-position:center; background-repeat:repeat-x;}
+.job span{
+float:left; display:inline-block; height:30px; background-color:#fff; padding-right:20px;}
+.job a{
+float:right; color:#f39800; display:inline-block; background-color:#fff; padding-left:20px;}
+
+.joblist .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+position:static; margin-top:30px;}
+.joblist .bx-wrapper .bx-pager.bx-default-pager a{
+width:12px; height:12px; background-color:#959595;}
+.joblist .bx-wrapper .bx-pager.bx-default-pager a:hover, .joblist .bx-wrapper .bx-pager.bx-default-pager a.active{
+background-color:#f39800}
+.protop2{
+position:relative}
+.jre{
+position:absolute; right:0;}
+.jobinfo{
+border-top:1px #ddd dashed; padding:20px 0px 80px 0px}
+
+
+
+
+
+.map_bg{
+width:100%; margin:0px; padding:0px; background-position:center; background-repeat:no-repeat; background-image:url(../images/mapbg.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/images/mapbg.jpg*/; height:628px;}
+.map { background-image: url(../images/map/bg.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/bg.png*/; width: 749px; height: 628px; overflow: hidden; position: relative; }
+.map .map-item { position: absolute; left: 0px; top: 0px; font-size: 12px; display: block; color: #fff; text-decoration: none; }
+.map .map-item span {  position: absolute; left: 0px; top: 0px; display: none; }
+.map .map-item:hover span, .map .map-item.current span{ display: block; }
+.map .map-item.mp-01 { width: 298px; height: 230px; left: 0px; top: 90px; }
+.map .map-item.mp-01 span { left: 147px; top: 136px; }
+.map .map-item.mp-01:hover, .map .map-item.mp-01.current { background-image: url(../images/map/01.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/01.png*/; }
+.map .map-item.mp-02 { width: 290px; height: 157px; left: 35px; top: 306px; }
+.map .map-item.mp-02 span { left: 110px; top: 71px; }
+.map .map-item.mp-02:hover, .map .map-item.mp-02.current { background-image: url(../images/map/02.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/02.png*/; }
+.map .map-item.mp-03 { width: 187px; height: 135px; left: 195px; top: 266px; }
+.map .map-item.mp-03 span { left: 90px; top: 60px; }
+.map .map-item.mp-03:hover, .map .map-item.mp-03.current { background-image: url(../images/map/03.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/03.png*/; }
+.map .map-item.mp-04 { width: 203px; height: 172px; left: 259px; top: 212px; }
+.map .map-item.mp-04 span { left: 130px; top: 120px; }
+.map .map-item.mp-04:hover, .map .map-item.mp-04.current { background-image: url(../images/map/04.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/04.png*/; }
+.map .map-item.mp-05 { width: 329px; height: 297px; left: 311px; top: 7px; }
+.map .map-item.mp-05 span { left: 130px; top: 230px; }
+.map .map-item.mp-05:hover, .map .map-item.mp-05.current { background-image: url(../images/map/05.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/05.png*/; }
+.map .map-item.mp-06 { width: 38px; height: 69px; left: 404px; top: 268px; }
+.map .map-item.mp-06 span { left: 0px; top: 30px; }
+.map .map-item.mp-06:hover, .map .map-item.mp-06.current { background-image: url(../images/map/06.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/06.png*/; }
+.map .map-item.mp-07 { width: 72px; height: 132px; left: 424px; top: 264px; }
+.map .map-item.mp-07 span { left: 30px; top: 89px; }
+.map .map-item.mp-07:hover, .map .map-item.mp-07.current { background-image: url(../images/map/07.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/07.png*/; }
+.map .map-item.mp-08 { width: 185px; height: 137px; left: 302px; top: 359px; }
+.map .map-item.mp-08 span { left: 75px; top: 60px; }
+.map .map-item.mp-08:hover, .map .map-item.mp-08.current { background-image: url(../images/map/08.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/08.png*/; }
+.map .map-item.mp-09 { width: 135px; height: 139px; left: 299px; top: 443px; }
+.map .map-item.mp-09 span { left: 52px; top: 78px; }
+.map .map-item.mp-09:hover, .map .map-item.mp-09.current { background-image: url(../images/map/09.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/09.png*/; }
+.map .map-item.mp-10 { width: 92px; height: 78px; left: 393px; top: 442px; }
+.map .map-item.mp-10 span { left: 40px; top: 40px; }
+.map .map-item.mp-10:hover, .map .map-item.mp-10.current { background-image: url(../images/map/10.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/10.png*/; }
+.map .map-item.mp-11 { width: 117px; height: 84px; left: 408px; top: 487px; }
+.map .map-item.mp-11 span { left: 63px; top: 43px; }
+.map .map-item.mp-11:hover, .map .map-item.mp-11.current { background-image: url(../images/map/11.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/11.png*/; }
+.map .map-item.mp-12 { width: 81px; height: 91px; left: 473px; top: 423px; }
+.map .map-item.mp-12 span { left: 35px; top: 35px; }
+.map .map-item.mp-12:hover, .map .map-item.mp-12.current { background-image: url(../images/map/12.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/12.png*/; }
+.map .map-item.mp-13 { width: 113px; height: 72px; left: 463px; top: 369px; }
+.map .map-item.mp-13 span { left: 50px; top: 37px; }
+.map .map-item.mp-13:hover, .map .map-item.mp-13.current { background-image: url(../images/map/13.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/13.png*/; }
+.map .map-item.mp-14 { width: 88px; height: 81px; left: 486px; top: 313px; }
+.map .map-item.mp-14 span { left: 36px; top: 43px; }
+.map .map-item.mp-14:hover, .map .map-item.mp-14.current { background-image: url(../images/map/14.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/14.png*/; }
+.map .map-item.mp-15 { width: 171px; height: 154px; left: 578px; top: 0px; }
+.map .map-item.mp-15 span { left: 80px; top: 100px; }
+.map .map-item.mp-15:hover, .map .map-item.mp-15.current { background-image: url(../images/map/15.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/15.png*/; }
+.map .map-item.mp-16 { width: 123px; height: 83px; left: 607px; top: 127px; }
+.map .map-item.mp-16 span { left: 50px; top: 45px; }
+.map .map-item.mp-16:hover, .map .map-item.mp-16.current { background-image: url(../images/map/16.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/16.png*/; }
+.map .map-item.mp-17 { width: 86px; height: 82px; left: 587px; top: 173px; }
+.map .map-item.mp-17 span { left: 37px; top: 32px; }
+.map .map-item.mp-17:hover, .map .map-item.mp-17.current { background-image: url(../images/map/17.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/17.png*/; }
+.map .map-item.mp-18 { width: 24px; height: 26px; left: 545px; top: 230px; }
+.map .map-item.mp-18 span { left: 0px; top: 0px; }
+.map .map-item.mp-18:hover, .map .map-item.mp-18.current { background-image: url(../images/map/18.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/18.png*/; }
+.map .map-item.mp-19 { width: 14px; height: 27px; left: 563px; top: 241px; }
+.map .map-item.mp-19 span { left: 0px; top: 0px; }
+.map .map-item.mp-19:hover, .map .map-item.mp-19.current { background-image: url(../images/map/19.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/19.png*/; }
+.map .map-item.mp-20 { width: 80px; height: 115px; left: 522px; top: 200px; }
+.map .map-item.mp-20 span { left: 13px; top: 72px; }
+.map .map-item.mp-20:hover, .map .map-item.mp-20.current { background-image: url(../images/map/20.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/20.png*/; }
+.map .map-item.mp-21 { width: 51px; height: 104px; left: 483px; top: 243px; }
+.map .map-item.mp-21 span { left: 15px; top: 49px; }
+.map .map-item.mp-21:hover, .map .map-item.mp-21.current { background-image: url(../images/map/21.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/21.png*/; }
+.map .map-item.mp-22 { width: 96px; height: 65px; left: 548px; top: 274px; }
+.map .map-item.mp-22 span { left: 30px; top: 34px; }
+.map .map-item.mp-22:hover, .map .map-item.mp-22.current { background-image: url(../images/map/22.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/22.png*/; }
+.map .map-item.mp-23 { width: 83px; height: 65px; left: 570px; top: 326px; }
+.map .map-item.mp-23 span { left: 35px; top: 19px; }
+.map .map-item.mp-23:hover, .map .map-item.mp-23.current { background-image: url(../images/map/23.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/23.png*/; }
+.map .map-item.mp-24 { width: 12px; height: 13px; left: 642px; top: 378px; }
+.map .map-item.mp-24 span { left: 0px; top: 0px; }
+.map .map-item.mp-24:hover, .map .map-item.mp-24.current { background-image: url(../images/map/24.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/24.png*/; }
+.map .map-item.mp-25 { width: 56px; height: 66px; left: 607px; top: 386px; }
+.map .map-item.mp-25 span { left: 25px; top: 30px; }
+.map .map-item.mp-25:hover, .map .map-item.mp-25.current { background-image: url(../images/map/25.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/25.png*/; }
+.map .map-item.mp-26 { width: 70px; height: 100px; left: 545px; top: 414px; }
+.map .map-item.mp-26 span { left: 23px; top: 40px; }
+.map .map-item.mp-26:hover, .map .map-item.mp-26.current { background-image: url(../images/map/26.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/26.png*/; }
+.map .map-item.mp-27 { width: 64px; height: 79px; left: 584px; top: 441px; }
+.map .map-item.mp-27 span { left: 25px; top: 40px; }
+.map .map-item.mp-27:hover, .map .map-item.mp-27.current { background-image: url(../images/map/27.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/27.png*/; }
+.map .map-item.mp-28 { width: 113px; height: 95px; left: 494px; top: 496px; }
+.map .map-item.mp-28 span { left: 40px; top: 25px; }
+.map .map-item.mp-28:hover, .map .map-item.mp-28.current { background-image: url(../images/map/28.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/28.png*/; }
+.map .map-item.mp-29 { width: 11px; height: 8px; left: 559px; top: 546px; }
+.map .map-item.mp-29 span { left: 0px; top: 0px; }
+.map .map-item.mp-29:hover, .map .map-item.mp-29.current { background-image: url(../images/map/29.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/29.png*/; }
+.map .map-item.mp-30 { width: 22px; height: 59px; left: 655px; top: 482px; }
+.map .map-item.mp-30 span { left: 5px; top: 10px; }
+.map .map-item.mp-30:hover, .map .map-item.mp-30.current { background-image: url(../images/map/30.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/30.png*/; }
+.map .map-item.mp-31 { width: 38px; height: 35px; left: 478px; top: 593px; }
+.map .map-item.mp-31 span { left: 5px; top: 10px; }
+.map .map-item.mp-31:hover, .map .map-item.mp-31.current { background-image: url(../images/map/31.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/31.png*/; }
+.map .map-item.mp-32 { width: 70px; height: 85px; left: 553px; top: 337px; }
+.map .map-item.mp-32 span { left: 30px; top: 45px; }
+.map .map-item.mp-32:hover, .map .map-item.mp-32.current { background-image: url(../images/map/32.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/map/32.png*/; }
+
+
+
+
+
+
+.products-list{ width: 100%; height: auto; padding-bottom: 50px; position: relative; overflow: hidden; } 
+.products-list li{ width: 295px; height: 363px; padding-top:0px; position: relative; float: left; margin-right: 1px; display: inline; background: #fff; font-size: 16px; line-height: 30px; text-align: center; } 
+.products-list .line-t{ width: 0; height: 5px; background: #dfdfdf; position: absolute; left: 0; top: 0; } 
+.products-list .line-r{ width: 5px; height: 0; background: #dfdfdf; position: absolute; right: 0; bottom: 0; } 
+.products-list .line-b{ width: 0; height: 5px; background: #dfdfdf; position: absolute; right: 5px; bottom: 0; } 
+.products-list .line-l{ width: 5px; height: 0; background: #dfdfdf; position: absolute; left: 0; top: 5px; } 
+.products-list .bg{ width: 0; height: 100%; background: #0b76cb; filter:alpha(opacity=30); opacity: 0.3; position: absolute; left: 50%; top: 0; } 
+.products-list img{ margin: 0px 0; width:95%; } 
+.products-list p{ width: 100%; float: left; color: #4267a0; } 
+.products-list .prev{ width: 118px; height: 424px; position: absolute; left: 0; top: 0; z-index: 2; cursor: pointer; } 
+.products-list .next{ width: 118px; height: 424px; position: absolute; right: 0; top: 0; z-index: 2; cursor: pointer; } 
+.prolist-wrap{ padding: 18px 0 52px; background: #f9f9f9; position: relative; z-index:7; } 
+.prolist-wrap .w960{ position: relative; } .prolist-search{ width: 958px; position: absolute; left: 0; top: -79px; z-index: 5; } 
+.prolist-search .select-box{ width: 318px; position: relative; float: left; margin-right: 2px; display: inline; } 
+.prolist-search .select-box p{ width: 300px; height: 46px; padding-left: 18px; line-height: 46px; color: #606060; background: url(../img/bg_sign22.jpg)/*tpa=http://www.hzfen.com/Myapp/Common/img/bg_sign22.jpg*/ no-repeat 95% center #fff; cursor: pointer; }
+
+.indexaboutmore{
+display:inline-block; width:575px; height:52px; border:3px #fff solid; text-align:center; color:#fff; line-height:52px; font-family:Arial, Helvetica, sans-serif; font-size:18px;}
+.indexaboutmore:hover{
+background-color:#fff; color:#2167bc;}
+.chrid{position: absolute;z-index: 999;display: none;}
+.chrid a {line-height: 30px;height: 30px;padding:0 10px;    }
+.chrid li.font{border-bottom: 1px solid #ccc;}
+.chrid li img:hover {opacity: 0.5;}
+.chrid .font:hover {background-color: #0b76cb;color: white !important;}
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>联系我们--赛特微</title>
+<meta name="keywords" content="赛特微" />
+<meta name="description" content="赛特微" />
+ <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery.bxslider.js" ></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/wow.min.js" ></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/load.js" ></script>
+  <link href="__PUBLIC__/Myapp/Common/css/jquery.bxslider.css"  rel="stylesheet" type="text/css"/>
+  <link href="__PUBLIC__/Myapp/Common/css/animate.min.css"  rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/bootstrap.min.css" />
+
+<link href="__PUBLIC__/GC/template/anisee/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/theme.css" />
+  <script>
+
+</script>
+ <style>
+ 	.amap-info-content {
+
+    border-radius: 10px;}
+ </style>
+    <script src="http://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="http://webapi.amap.com/maps?v=1.4.1&key=ce1e0a5cc586b8b9f8eab0226eb9c781"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.href="{:url('index/index/index_mo')}";
+            } else {
+               
+            }
+        }
+
+        browserRedirect();
+</script>
+{include file="common/header"}
+<div class="nybanner" >
+	<img src="__PUBLIC__/phy-img/lxwm1.jpg" style="width: 100%;" alt="">
+</div> 
+<div class="Root" style="padding-bottom:60px;">
+		<div style="width:100%; overflow:hidden; padding-top:80px; padding-bottom:55px;">
+			<img src="__PUBLIC__/Myapp/Common/images/cn1.png" >
+		</div>
+		<div class=" contactmid"  style="height: 200px;">
+			<div class="contact_left">
+				<img src="__PUBLIC__/phy-img/code_max.jpg" style="width: 140px;" >
+				<table>
+					<tr>
+						<td style="width: 80px;">
+							{$Think.lang.Online1}：
+						</td>
+						<td>
+							0755-83661636 83668012					</td>
+					</tr>
+					<tr>
+						<td>
+							{$Think.lang.Online2}：
+						</td>
+						<td>
+							2355647681@qq.com				</td>
+					</tr>
+					<tr>
+						<td>
+							{$Think.lang.Online3}
+						</td>
+						<td>
+							{$Think.lang.Online3_1}
+						</td>
+					</tr>
+					<tr>
+						<td>{$Think.lang.Online4}</td>
+						<td>{$Think.lang.Online4_1}</td>
+					</tr>
+					<tr>
+						<td>{$Think.lang.Online5}</td>
+						<td>{$Think.lang.Online5_1}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contact_right">
+				<ul>
+					<li>
+						<input type="text" id="name" onBlur="if(this.value=='') this.value='姓名';" onFocus="if(this.value=='姓名') this.value='';"  value="{$Think.lang.name1}" >
+					</li>
+					<li style="float:right">
+						<input type="text" onBlur="if(this.value=='') this.value='电话';" onFocus="if(this.value=='电话') this.value='';" id="phone" value="{$Think.lang.telephone1}" id="phone"  >
+					</li>
+					<li style="border:0;">
+						<textarea onBlur="if(this.value=='') this.value='内容';" onFocus="if(this.value=='内容') this.value='';"  id="content">{$Think.lang.content1}</textarea>
+					</li>
+				</ul>
+				<div style="text-align: center;">
+					<input class="liuyan" id="sub"  type="submit" value="{$Think.lang.content2}">
+				</div>
+			</div>
+		</div>
+	
+</div>
+
+<div class="Root" style="margin-top: 60px;">
+ <div  id="containerss" style="height:540px;width: 100%;margin-bottom: 20px;">
+		
+</div>
+</div>
+
+{include file="common/footer"}
+
+<script>
+$(function(){
+		  
+		$(window).scroll(function(e){h();})
+        $(window).resize(function(){h();})
+	 
+	});
+function h(){
+	var scrolltop=$(document).scrollTop();	
+	var docwidth=$(document).width()
+	 
+	if (scrolltop>115)
+	{
+		 
+		 
+		$('.gotop').show();
+		
+	}
+	else
+	{
+		  
+		 
+		$('.gotop').hide();
+		
+	}
+}
+</script>
+<a class="gotop" href="javascript:void(0);" style="position:fixed; z-index:99999999999; z-index:40px; bottom:50px; right:10px; display:none">
+	<img src="__PUBLIC__/Myapp/Common/images/up2.png"   />
+</a>
+<script>
+$(function(){
+	$(".gotop").on("click",function(e){
+			$("html,body").animate({scrollTop :0},400);
+			return false;	
+		});
+});
+</script>
+
+<script>
+
+        $(document).ready(function () {
+            gdmap();
+            openInfo();
+        })
+        var map = "";
+        var marker = "";
+        var infoWindow;
+        // var markers=[];
+        var info = [];
+
+        function gdmap() {
+            map = new AMap.Map('containerss', { //获取ID
+                resizeEnable: true,
+                zoom: 18,
+                center: [114.083113,22.548029] //中心坐标
+            });
+        }
+
+
+        infoWindow = new AMap.InfoWindow({
+            isCustom: false
+        });
+
+        function openInfo() {
+            //构建信息窗体中显示的内容<img src="">
+
+            info.push('<div style=""><img src="__PUBLIC__/phy-img/logo.png" http:="" webapi.amap.com="" images="" autonavi.png="" \"=""> ');
+            info.push('<div class="text-b" style="\"padding:0px" 0px="" 4px;\"=;"color:balck;"><b>深圳市赛特微电子有限公司</b>');
+
+
+            infoWindow = new AMap.InfoWindow({
+                content: info.join("<br>") 
+            });
+            infoWindow.open(map, [114.083113,22.548029]);
+        }
+
+</script> 
+<script>
+$('#sub').click(function(){
+		
+		
+										 
+		   if($('#name').val()=="" || $('#name').val()=="姓名"){
+			   	alert("姓名不能为空！");
+				return false;
+			   } 
+		
+		 if($('#phone').val()=="" || $('#phone').val()=="电话"){
+			   	alert("电话不能为空！");
+				return false;
+			   }
+		     	   
+		  
+		  
+		 
+		  
+		 	   
+	  
+	
+	});	
+ 	$('#menu li').hover(function(){
+		$(this).find('ul').show();
+
+	},function(){
+		$(this).find('ul').hide();
+	})
+</script>  
+</body>
+</html>

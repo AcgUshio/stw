@@ -1,0 +1,66 @@
+<Div id="header">
+	<div class="Root">
+	<Div id="logo">
+		<a href="index.htm" >
+			<img src="__PUBLIC__/phy-img/logo.png" >
+		</a>
+	</Div>
+	 
+	<div id="menu">
+		<ul style="">
+			<li>
+				<a href="{:url('index/Index/index')}" {if condition="request()->controller() eq 'Index'"}class="on"{/if}>{$Think.lang.Index}</a>
+			</li>
+			<li>
+				<a href="{:url('index/About/index')}" {if condition="request()->controller() eq 'About'"}class="on"{/if}>{$Think.lang.About}</a>
+				
+					<ul class="chrid" style="margin-left: 90px;">
+						<li >
+							<a href="{:url('index/About/index')}" ><img src="__PUBLIC__/phy-img/gywm.jpg" alt="" style="margin-top: 10px;" /></a></li>
+						
+					</ul>
+			</li>
+			<li>
+				<a href="{:url('index/Product/index')}" {if condition="request()->controller() eq 'Product'"}class="on"{/if} >{$Think.lang.chanpin}</a>
+				<ul class="chrid" style="    margin-left: 200px;">
+						<li>
+							<a href="product.htm" ><img src="__PUBLIC__/phy-img/cpzx.jpg" alt="" style="margin-top: 10px;" /></a>
+							</li>
+						
+					</ul>
+			</li>
+			<li>
+				<a href="{:url('index/News/index')}" {if condition="request()->controller() eq 'News'"}class="on"{/if} >{$Think.lang.xinwen}</a>
+				<ul class="chrid" style="    margin-left: 390px;width: 100px;background-color: white;text-align: center;">
+						<li class="font" style="margin-top: 20px;">
+							<a  href="{:url('index/News/index')}" >{$Think.lang.nwes1}</a>
+							</li>
+							<li class="font">
+							<a  href="{:url('index/News/trade')}" >{$Think.lang.nwes2}</a>
+							</li>
+							<li class="font">
+							<a  href="{:url('index/News/lore')}" >{$Think.lang.nwes3}</a>
+							</li>
+						
+					</ul>
+			</li>
+			<li>
+				<a href="{:url('index/Contact/index')}" {if condition="request()->controller() eq 'Contact'"}class="on"{/if} >{$Think.lang.lianxi}</a>
+				<ul class="chrid" style="    margin-left: 430px;">
+						<li>
+							<a href="{:url('index/Contact/index')}" ><img src="__PUBLIC__/phy-img/lxwm.jpg" alt="" style="margin-top: 10px;" /></a>
+							</li>
+						
+					</ul>
+			</li>
+			 <li>
+				<a   href="https://saitew.1688.com/"  target="_blank">{$Think.lang.wangluo}</a>
+			</li>
+			<li>
+				<a  onclick="chanlang('zh')" href="javascript:void();" >中</a>/
+				<a  onclick="chanlang('en')" href="javascript:void();" >En</a>
+			</li>
+		</ul>
+	</div>
+	</div>
+</Div> 

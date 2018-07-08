@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>深圳赛特微电子有限公司PHY品牌二极管官网</title>
+<meta name="keywords" content="深圳赛特微电子有限公司PHY品牌二极管官网" />
+<meta name="description" content="深圳赛特微电子有限公司PHY品牌二极管官网" />
+  <script type="text/javascript" src="Myapp/Common/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="Myapp/Common/js/jquery.bxslider.js" ></script>
+  <script type="text/javascript" src="Myapp/Common/js/wow.min.js" ></script>
+  <script type="text/javascript" src="Myapp/Common/js/load.js" ></script>
+  <link href="__PUBLIC__/Myapp/Common/css/jquery.bxslider.css"  rel="stylesheet" type="text/css"/>
+  <link href="__PUBLIC__/Myapp/Common/css/animate.min.css"  rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/bootstrap.min.css" />
+
+<link href="__PUBLIC__/GC/template/anisee/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/theme.css" />
+</head>
+<body>
+<link rel="shortcut icon" href="__PUBLIC__/ico.ico"   type="image/vnd.microsoft.icon">
+<link rel="icon" href="__PUBLIC__/ico.ico"   type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="__PUBLIC__/ico.ico"  />
+<link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/ico.ico"  media="screen" /> 
+<script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.href="{:url('index/index/index_mo')}";
+            } else {
+               
+            }
+        }
+
+        browserRedirect();
+</script>
+
+{include file="common/header"}
+<div class="nybanner" >
+	<img src="__PUBLIC__/phy-img/newsbanner.jpg" style="width: 100%;" alt="">
+</div>
+<Div class="Root">
+	 
+	 <div class="protop protop2"> 
+	 	<a href="{:url('index/News/index')}" >新闻中心</a>><span>{$detail.title}</span>        <a href="javascript:history.go(-1);" class="jre"><<返回</a>                                                          
+	 </div>
+</Div>
+<Div class="jobinfo">
+	<Div class="Root" style="line-height:25px; color:#646464;">
+		 <Div style="font-size:18px; text-align:center; width:100%; background-image:url(Myapp/Common/images/j2.png)/*tpa=http://www.hzfen.com/Myapp/Common/images/j2.png*/; padding-bottom:15px; background-position:bottom; background-repeat:repeat-x">
+        {$detail.title}
+		 </Div>
+		 <Div style="color:#909090; text-align:center; padding-top:10px; overflow:hidden;">
+			发布日期：{$detail.time}  	 </Div>
+		 <div style="width:100%; margin:0px; padding:0px; overflow:hidden; padding-top:20px; padding-bottom:50px;">
+                {$detail.content}
+		 </div>
+		 
+		  <div class="returnbar" style="display:block">
+		 	<a href="javascript:;" onClick="javascript:history.go(-1);">返回</a>
+		 </div>
+		 
+	</Div>
+</Div> 
+  
+{include file="common/footer"}
+
+<script>
+$(function(){
+		  
+		$(window).scroll(function(e){h();})
+        $(window).resize(function(){h();})
+	 
+	});
+function h(){
+	var scrolltop=$(document).scrollTop();	
+	var docwidth=$(document).width()
+	 
+	if (scrolltop>115)
+	{
+		 
+		 
+		$('.gotop').show();
+		
+	}
+	else
+	{
+		  
+		 
+		$('.gotop').hide();
+		
+	}
+}
+</script>
+<a class="gotop" href="javascript:void(0);" style="position:fixed; z-index:99999999999; z-index:40px; bottom:50px; right:10px; display:none">
+	<img src="__PUBLIC__/Myapp/Common/images/up2.png"   />
+</a>
+<script>
+$(function(){
+	$(".gotop").on("click",function(e){
+			$("html,body").animate({scrollTop :0},400);
+			return false;	
+		});
+});
+</script>
+ 
+</body>
+</html>

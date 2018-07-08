@@ -1,0 +1,66 @@
+<div class="big_wapper" id="footer" style="">
+    <div style="width: 100%;height: 300px;background-color: #337ab7;color: white;    margin-top: -15px;">
+<div style="width: 1200px;margin: 0 auto;">
+   <div style="width: 50%;float: left;padding:50px 0px;">
+
+       <p style="font-size: 19px;">{$Think.lang.a1}</p>
+       <p><span style="width: 32px;height:32px;"><img src="__PUBLIC__/phy-img/email_pic.png" style="vertical-align:middle;" alt=""></span>
+       <span style="width: 200px;padding-bottom: 5px;"> 2355647681@qq.com		</span></p>
+       <p><span style="width: 32px;"><img style="vertical-align:middle;" src="__PUBLIC__/phy-img/phone_pic.png" alt="" /></span>
+       <span style="width: 200px;">0755-83661636</span></p>
+       <p><span style="width: 32px;"><img style="vertical-align:middle;" src="__PUBLIC__/phy-img/shouji_pic.png" alt="" /></span>
+       <span style="width: 200px;">0755-83668012</span></p>
+       
+   <p></p>
+   </div>
+   <div style="width: 50%;float: right;padding:50px 0px;">
+       <img src="__PUBLIC__/phy-img/code_max.jpg" alt="" style="width: 170px;height: 170px;float: right;" />
+   </div>
+</div>
+
+</div>
+
+<div id="wjSubNav" style="">
+<div class="fix_div" style=" ">
+   <a href="javascript:void(0)"><img src="__PUBLIC__/phy-img/phone_pic.png" style="margin-top: 10px;margin-left: 10px;" alt=""></a>
+   <div class="font" style="bottom: 51px;">0755-83661636</div>
+</div>
+<div class="fix_div" style=" ">
+   <a href="javascript:void(0)"><img src="__PUBLIC__/phy-img/email_pic.png" style="margin-top: 10px;margin-left: 10px;" alt=""></a>
+   <div class="font" style="bottom: 1px;">2355647681@qq.com</div>
+</div>
+</div>
+
+
+
+<div class="Root">
+ <div class="fleft">
+     <div>
+         <a href="{:url('index/about/index')}" >{$Think.lang.About}</a><span>|</span>
+         <a href="{:url('index/product/index')}">{$Think.lang.chanpin}</a><span>|</span>
+         <a href="{:url('index/news/index')}">{$Think.lang.xinwen}</a><span>|</span>
+         <a href="{:url('index/contact/index')}">{$Think.lang.lianxi}</a><span>|</span>
+         <a href="https://saitew.1688.com/">{$Think.lang.wangluo}</a>
+     </div>
+     <div style="color:#f1f3f4;  ">
+        {$Think.lang.a2}
+     </div>
+ </div>
+ 
+ <Div style="float:right; width:240px; text-align:right;">
+     <div style="padding-bottom:5px;">{$Think.lang.a3}：  &nbsp;&nbsp;<a href="http://www.wunuoyoupin.com">吾诺优品</a></div>
+ <!-- JiaThis Button BEGIN -->
+
+
+   </Div>
+
+</div>
+</div>
+<script>
+    function chanlang(lang)
+    {
+        $.get("{:url('index/chanlang')}",{"lang":lang},function(d){
+            location.reload();
+        })
+    }
+</script>

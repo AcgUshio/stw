@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>{$Think.lang.nwes1}-赛特微</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+ 
+<script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery2.js" ></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/jquery.bxslider.js" ></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/wow.min.js" ></script>
+  <script type="text/javascript" src="__PUBLIC__/Myapp/Common/js/load.js" ></script>
+  <link href="__PUBLIC__/Myapp/Common/css/jquery.bxslider.css"  rel="stylesheet" type="text/css">
+  <link href="__PUBLIC__/Myapp/Common/css/animate.min.css"  rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/Myapp/Common/css/theme.css" >
+  <script>
+$(function(){
+	$('#menu ul li').eq(4).find('a').addClass('on');
+});
+</script>
+ 
+</head>
+<body>
+
+<script type="text/javascript">
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.href="{:url('index/index/index_mo')}";
+            } else {
+               
+            }
+        }
+
+        browserRedirect();
+</script>
+
+{include file="common/header"}
+
+<!-- <div class="nybanner" style="background-image:url(__PUBLIC__/Myapp/Common/images/banner8.jpg);">
+
+</div> --> 
+<div class="nybanner" >
+	<img src="__PUBLIC__/phy-img/newsbanner.jpg" style="width: 100%;" alt="">
+</div>
+<Div class="Root">
+	<div style="padding-top:85px; padding-bottom:60px; text-align:center; width:100%; overflow:hidden;">
+		<img src="__PUBLIC__/Myapp/Common/images/n1.png" >
+	</div>
+	<div class="pcate">
+		<ul>
+			<li class="fli">
+				<a class="on" href="{:url('index/News/index')}" >{$Think.lang.nwes1}</a>
+			</li><li class="">
+				<a class="" href="{:url('index/News/trade')}" >{$Think.lang.nwes2}</a>
+			</li>
+			<li class="">
+				<a class="" href="{:url('index/News/lore')}" >{$Think.lang.nwes3}</a>
+			</li>						
+		</ul>
+	</div>
+	<div class="plist_ny">
+		<ul class="caseul newslist2">
+			<!--循环 start -->
+			{volist name='list' id='data'}
+			<li class="col-md-4">
+				<div class="plist_xwzx_x">
+					
+				
+				<a href="{:url('index/News/detail',['id'=>$data.id])}" >
+					<div class="plist_ny_img">
+						<img src="/public/{$data.cover}"  style=" width:auto">
+					</div>
+					<div class="plist_ny_name">
+						{php}
+						$content_01 = $data['content'];
+						$content_02 = htmlspecialchars_decode($content_01);//把一些预定义的 HTML 实体转换为字符
+						$content_03 = str_replace("&nbsp;"," ",$content_02);//将空格替换成空
+						$contents = strip_tags($content_03);//函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
+						$con = mb_substr($contents, 0, 50,"utf-8");//返回字符串中的前100字符串长度的字符
+						echo $con;
+						{/php}
+					</div>
+				</a>
+				</div>
+			</li>
+			{/volist}
+		<!--循环 end	 -->				 
+		
+			 
+		</ul>
+		<div style="width:35%;margin:0 auto;">{$list->render()}</div>
+	</div>
+	<!-- <div class="loadmorebar">
+		<a href="javascript:;" id="/index.php?s=/News/ajax1.html" lang="29" class="loadmore">点击查看更多</a>
+	</div> -->
+	
+</Div>
+
+{include file="common/footer"}
+	
+
+<script>
+// $(function(){
+		  
+// 		$(window).scroll(function(e){h();})
+//         $(window).resize(function(){h();})
+	 
+// 	});
+// function h(){
+// 	var scrolltop=$(document).scrollTop();	
+// 	var docwidth=$(document).width()
+	 
+// 	if (scrolltop>115)
+// 	{
+		 
+		 
+// 		$('.gotop').show();
+		
+// 	}
+// 	else
+// 	{
+		  
+		 
+// 		$('.gotop').hide();
+		
+// 	}
+// }
+$('#menu li').hover(function(){
+		$(this).find('ul').show();
+
+	},function(){
+		$(this).find('ul').hide();
+	})
+</script>
+<a class="gotop" href="javascript:void(0);" style="position:fixed; z-index:99999999999; z-index:40px; bottom:50px; right:10px; display:none">
+	<img src="__PUBLIC__/Myapp/Common/images/up2.png"   />
+</a>
+<script>
+// $(function(){
+// 	$(".gotop").on("click",function(e){
+// 			$("html,body").animate({scrollTop :0},400);
+// 			return false;	
+// 		});
+// });
+</script>
+ <script>
+// var page = 1;
+// $(function(){
+	
+// 	$('.loadmore').click(function(){
+// 		getlist($(this).attr('id'),$(this).attr('lang'));
+		
+// 	});
+	 
+	 
+// });
+/* function getlist(href,cid){
+		 
+		$.get(href,{page:page,cid:cid,t:new Date().getTime()},function(d,t,j){
+			page++;
+			
+			if(d==""){
+				alert("资料正在整理中！");
+				return false;
+				}else{
+				$(".newslist2").append(d);
+				 
+					$('.newslist2 li').each(function(){
+						 var n=$('.newslist2 li').index(this);
+						 if(n%3==0){
+						 	$(this).css('margin-left','0');
+						 }
+					});
+				}
+			 
+		},"text");
+		
+		 
+		
+		return false;
+}
+  */
+</script> 
+</body>
+</html>

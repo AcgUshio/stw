@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> - 表单验证 jQuery Validation</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="__PUBLIC__/favicon.ico"> <link href="__PUBLIC__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>修改产品</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                          
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" action="{:url('admin/product/product_edit',['id'=>$detail['id']])}" method="POST" enctype="multipart/form-data" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">产品名称：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="name" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['name']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">pdf：</label>
+                                <div class="col-sm-8">
+                                    <input  name="cover" minlength="1" type="file" class="form-control"  aria-required="false">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">最大重复峰值反向电压 VRRM(V)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="vrrm" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['vrrm']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">最大正向平均整流电流 I(AV)(A)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="iava" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['iava']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">正向峰值浪涌电流@8.3ms正弦电波 IFSM(A)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="ifsma" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ifsma']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">最大正向电压@TA=25℃ VF(V)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="vfv" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['vfv']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">最大正向电压@TA=25℃ IF(A)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="ifa" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ifa']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">最大反向电流RRMTA=25℃ IR(µA)：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="ira" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ira']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">封装形式  Package & Size：</label>
+                                <div class="col-sm-8">
+                                    <input id="cname" name="size" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['size']}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">产品分类：</label>
+                                <select class=" col-sm-8" name="classify">
+                                    <option value="整流二极管贴片" {if condition="$detail['classify'] eq '整流二极管贴片'"}selected="selected"{/if}>整流二极管贴片</option>
+                                    <option value="整流二极管插片" {if condition="$detail['classify'] eq '整流二极管插片'"}selected="selected"{/if}>整流二极管插片</option>
+                                    <option value="肖特基二极管贴片" {if condition="$detail['classify'] eq '肖特基二极管贴片'"}selected="selected"{/if}>肖特基二极管贴片</option>
+                                    <option value="肖特基二极管插片" {if condition="$detail['classify'] eq '肖特基二极管插片'"}selected="selected"{/if}>肖特基二极管插片</option>
+                                    <option value="稳压二极管贴片" {if condition="$detail['classify'] eq '稳压二极管贴片'"}selected="selected"{/if}>稳压二极管贴片</option>
+                                    <option value="稳压二极管插片" {if condition="$detail['classify'] eq '稳压二极管插片'"}selected="selected"{/if}>稳压二极管插片</option>
+                                    <option value="快恢复二极管贴片" {if condition="$detail['classify'] eq '快恢复二极管贴片'"}selected="selected"{/if}>快恢复二极管贴片</option>
+                                    <option value="快恢复二极管插片" {if condition="$detail['classify'] eq '快恢复二极管插片'"}selected="selected"{/if}>快恢复二极管插片</option>
+                                    <option value="超快恢复二极管贴片" {if condition="$detail['classify'] eq '超快恢复二极管贴片'"}selected="selected"{/if}>超快恢复二极管贴片</option>
+                                    <option value="超快恢复二极管插片" {if condition="$detail['classify'] eq '超快恢复二极管插片'"}selected="selected"{/if}>超快恢复二极管插片</option>
+                                    <option value="玻璃钝化二极管贴片" {if condition="$detail['classify'] eq '玻璃钝化二极管贴片'"}selected="selected"{/if}>玻璃钝化普通整流管插件</option>
+                                    <option value="玻璃钝化二极管插片" {if condition="$detail['classify'] eq '玻璃钝化二极管插片'"}selected="selected"{/if}>玻璃钝化快恢复整流管插件</option>
+                                    <option value="TVS二极管贴片" {if condition="$detail['classify'] eq 'TVS二极管贴片'"}selected="selected"{/if}>TVS二极管贴片</option>
+                                    <option value="TVS二极管插片" {if condition="$detail['classify'] eq 'TVS二极管插片'"}selected="selected"{/if}>TVS二极管插片</option>
+                                    <option value="高结温MIN整流桥-桥堆" {if condition="$detail['classify'] eq '高结温MIN整流桥-桥堆'"}selected="selected"{/if}>高结温MIN整流桥-桥堆</option>
+                                    <option value="MIN整流桥-桥堆" {if condition="$detail['classify'] eq 'MIN整流桥-桥堆'"}selected="selected"{/if}>MIN整流桥-桥堆</option>
+                                </select>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-3">
+                                    <button class="btn btn-primary" type="submit">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+          
+        </div>
+
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="__PUBLIC__/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="__PUBLIC__/js/content.js?v=1.0.0"></script>
+
+    <!-- jQuery Validation plugin javascript-->
+    <script src="__PUBLIC__/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/validate/messages_zh.min.js"></script>
+
+    <script src="__PUBLIC__/js/demo/form-validate-demo.js"></script>
+
+
+
+
+    
+    
+
+</body>
+
+</html>
